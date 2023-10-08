@@ -156,10 +156,7 @@ class AudioServiceWeb extends AudioServicePlatform {
       if (artist != null) 'artist': artist,
       if (album != null) 'album': album,
       'artwork': [
-        {
-          'src': artUri,
-          'sizes': '512x512',
-        }
+        {'src': artUri, 'sizes': '512x512', 'type': 'image/png'}
       ],
     });
   }
